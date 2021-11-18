@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Osnovni podaci</legend>
+        <p>
+          <label>Ime :</label>
+          <input type="text" maxlength="15" value="Petar" />
+        </p>
+        <p>
+          <label>Prezime :</label>
+          <input type="text" placeholder="Unesite prezime" />
+        </p>
+        <p>
+          <label>Godine: </label>
+          <input type="number" min="18" step="0.5" />
+        </p>
+        <p>
+          <label>E-mail: </label>
+          <input type="email" name="" id="" />
+        </p>
+        <p>
+          <label for="">Lozinka</label>
+          <input type="password" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Ostali podaci</legend>
+        <p>
+          <label for="">Odaberite pol: </label>
+          <input type="radio" name="pol" id="" value="z" checked />Zenski
+          <input type="radio" name="pol" id="" value="m" />Muski
+          <input type="radio" name="pol" id="" value="d" />Drugo
+        </p>
+        <p>
+          <label for="">Odaberite kurs: </label>
+          <input type="radio" name="kurs" id="" value="js" />JS
+          <input type="radio" name="kurs" id="" value="php" />PHP
+          <input type="radio" name="kurs" id="" value="qa" />QA
+        </p>
+        <p>
+          <label for="">Odaberite programske jezike :</label>
+          <br />
+          <input type="checkbox" name="programskijezik" id="" value="php" />php
+          <input type="checkbox" name="programskijezik" id="" value="js" />js
+          <input
+            type="checkbox"
+            name="programskijezik"
+            id=""
+            value="python"
+          />python
+          <input
+            type="checkbox"
+            name="programskijezik"
+            id=""
+            value="java"
+          />java
+          <input type="checkbox" name="programskijezik" id="" value="c++" />c++
+        </p>
+        <p>
+          <label for="">Obrazovanje :</label>
+          <select name="Obrazovanje">
+            <option value="">Osnovna skola</option>
+            <option value="">Srednja skola</option>
+            <optgroup label="Fakultet">
+              <option value="oas">OAS</option>
+              <option value="mas">MAS</option>
+              <option value="das">DAS</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
