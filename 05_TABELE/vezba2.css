@@ -1,0 +1,11 @@
+.tabela1 tr:nth-child(odd) {
+    font-style: italic;
+}
+
+.tabela2 tr:nth-child(even):hover {
+    background-color: yellow;
+    
+}
+.tabela2 tr:nth-child(3n) {
+    background-color: blue;
+}

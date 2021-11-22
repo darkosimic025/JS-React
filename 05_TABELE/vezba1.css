@@ -1,0 +1,9 @@
+.treciRed {
+    background-color: yellow;
+}
+.drugaTabela tr>td:nth-child(3) {
+    background-color: yellow;
+}
+.drugaTabela  tr>th:nth-child(3) {
+    background-color: yellow;
+}
