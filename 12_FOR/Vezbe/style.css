@@ -1,0 +1,60 @@
+/* .osma {
+    clear: both;
+}
+span {
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 1px black;
+    margin: 5px 0px;
+    text-align: center;
+    line-height: 30px;
+}
+.crna {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+/* 
+td {
+    width: 30px;
+    height: 30px;
+} */ 
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+
+div {
+   
+    /* width: 400px; */
+    margin-top: 20px;
+}
+span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    border: black 1px solid;
+}
+
+.bela {
+    background-color: white;
+}
+
+.crna {
+    background-color: black;
+    color: white;
+}

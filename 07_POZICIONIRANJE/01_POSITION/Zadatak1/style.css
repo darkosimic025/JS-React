@@ -1,0 +1,45 @@
+.naslov {
+    background-image: url(pizza.jpg);
+    height: 100px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    
+}
+
+.tekst1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tekst2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tekst3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.tekst4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tekst5 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    line-height: 100px;   
+}
+
+* {
+    margin: 0;
+}

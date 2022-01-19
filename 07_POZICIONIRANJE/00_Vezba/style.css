@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+header {
+    background-color: purple;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+section {
+    position: relative;
+    background-color: brown;
+    top: 50px;
+    left: 50px;
+    margin: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+section img {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+}
+section p {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+section a {
+    position: absolute;
+    right: 20px;
+    bottom: 200px;
+}

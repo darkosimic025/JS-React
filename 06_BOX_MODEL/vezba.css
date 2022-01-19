@@ -1,32 +1,12 @@
-/* #leviBox {
-  float: left;
-  background-color: #cfcf9a;
-  width: 47%;
-  height: 40px;
-  margin-right: 1%;
-  margin-left: 5px;
-}
-#desniBox {
-  float: right;
-  background-color: silver;
-  width: 47%;
-  height: 40px;
-  margin-left: 1%;
-  margin-right: 5px;
-}
-#leviBox,
-#desniBox {
-  border-style: solid;
-  border-width: 1px;
-  padding-left: 15px;
-  padding-top: 10px
-  
-} */
 
+body {
+  padding: 0;
+  margin: 0;
+}
 span {
   border: 2px solid black;
   display: inline-block;
-  width: 48%;
+  width: 50%;
   height: 40px;
 }
 #leviBox {
@@ -37,4 +17,8 @@ span {
 #desniBox {
   float: right;
   background-color: silver;
+}
+
+* {
+  box-sizing: border-box;
 }

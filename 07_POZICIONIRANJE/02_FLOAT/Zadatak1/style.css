@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+#parent {
+    background-color: red;
+
+}
+
+#parent p {
+    background-color: burlywood;
+    float: left;
+    width: 23.3%;
+    text-align: center;
+    height: 100px;
+    border: solid;
+}
+
+/* #parent {
+    background-color: red;
+    position: relative;
+}
+
+#parent p {
+    background-color: burlywood;
+    width: 20%;
+    position: absolute;
+}
+
+#parent p:nth-child(1) {
+    left: 10%;
+}
+
+#parent p:nth-child(2) {
+    left: 35%;
+}
+
+#parent p:nth-child(3) {
+    left: 60%;
+} */

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 20px;
+    color: rgb(223, 174, 50);
+}
+
+li {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid rgb(213, 223, 168);
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+}
