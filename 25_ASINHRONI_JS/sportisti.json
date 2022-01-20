@@ -1,0 +1,19 @@
+[
+    {
+        "imePrezime" : "LeBron James",
+        "visina" : "206",
+        "timovi" : ["Miami Heat", "Cleveland Cavaliers","Los Angeles Lakers"]
+    },
+
+    {
+        "imePrezime" : "Michael Jordan",
+        "visina" : "198",
+        "timovi" : ["Chicago Bulls", "Washington Wizards"]
+    },
+
+    {
+        "imePrezime" : "Stephen Curry",
+        "visina" : "188",
+        "timovi" : ["Golden State Warriors"]
+    }
+]
