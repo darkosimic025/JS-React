@@ -140,40 +140,40 @@
 //     request.send();
 // }
 
-let sportisti = callback => {
-        let request = new XMLHttpRequest();
-    request.addEventListener('readystatechange', function () {
-        if (this.readyState === 4 && this.status === 200) {
-            let data = JSON.parse(request.responseText);
-            callback(data);
-        } else if (this.readyState === 4) {
-            console.log('Greska')
-        }
-    });
-    request.open("GET", "sportisti.json");
-    request.send();
-}
+// let sportisti = callback => {
+//         let request = new XMLHttpRequest();
+//     request.addEventListener('readystatechange', function () {
+//         if (this.readyState === 4 && this.status === 200) {
+//             let data = JSON.parse(request.responseText);
+//             callback(data);
+//         } else if (this.readyState === 4) {
+//             console.log('Greska')
+//         }
+//     });
+//     request.open("GET", "sportisti.json");
+//     request.send();
+// }
 
-let prosecnaVisina = sportisti => {
-    let brojSportista = sportisti.length;
-    console.log(sportisti)
-    let ukupnaVisina = 0;
-    sportisti.forEach(sportista => {
-        ukupnaVisina += parseFloat(sportista.visina);
-    });
-    console.log(ukupnaVisina / brojSportista);
-}
+// let prosecnaVisina = sportisti => {
+//     let brojSportista = sportisti.length;
+//     console.log(sportisti)
+//     let ukupnaVisina = 0;
+//     sportisti.forEach(sportista => {
+//         ukupnaVisina += parseFloat(sportista.visina);
+//     });
+//     console.log(ukupnaVisina / brojSportista);
+// }
 
-sportisti(prosecnaVisina);
+// sportisti(prosecnaVisina);
 
-let najmanjeTransfera = sportisti => {
-    let minTransfera = sportisti[0];
-    sportisti.forEach(sportista => {
-        if (minTransfera.timovi.length >= sportista.timovi.length) {
-            minTransfera = sportista;
-        }
-    });
-    console.log(minTransfera.imePrezime)   
-}
+// let najmanjeTransfera = sportisti => {
+//     let minTransfera = sportisti[0];
+//     sportisti.forEach(sportista => {
+//         if (minTransfera.timovi.length >= sportista.timovi.length) {
+//             minTransfera = sportista;
+//         }
+//     });
+//     console.log(minTransfera.imePrezime)
+// }
 
-sportisti(najmanjeTransfera);
+// sportisti(najmanjeTransfera);
