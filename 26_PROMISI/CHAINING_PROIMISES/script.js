@@ -23,7 +23,7 @@ let getTodos = resource => {
 }
 
 getTodos('../JSON/todos.json').then(data => {
-    console.log(data) 
+    console.log(data)
     return getTodos('../JSON/fruits.json');
 }).then(data => {
     console.log(data);
@@ -34,24 +34,27 @@ getTodos('../JSON/todos.json').then(data => {
     console.log(error)
 })
 
-// getTodos('../JSON/todos.json', (data, error) => {
-//     if (error) {
-//         console.log(error)
-//     } else {
-//         console.log(data)
-//         getTodos('../JSON/fruits.json', (data, error) => {
-//             if (error) {
-//                 console.log(error)
-//             } else {
-//                 console.log(data)
-//                 getTodos('../JSON/vegetables.json', (data, error) => {
-//                     if (error) {
-//                         console.log(error)
-//                     } else {
-//                         console.log(data)
-//                     }
-//                 })
-//             }
-//         });
-//     }
-// });
+getTodos('../JSON/todos.json', (data, error) => {
+    if (error) {
+        console.log(error)
+    } else {
+        console.log(data)
+        getTodos('../JSON/fruits.json', (data, error) => {
+            if (error) {
+                console.log(error)
+            } else {
+                console.log(data)
+                getTodos('../JSON/vegetables.json', (data, error) => {
+                    if (error) {
+                        console.log(error)
+                    } else {
+                        console.log(data)
+                    }
+                })
+            }
+        });
+    }
+});
+
+
+

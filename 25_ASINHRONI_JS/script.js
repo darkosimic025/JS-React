@@ -177,3 +177,94 @@
 // }
 
 // sportisti(najmanjeTransfera);
+
+// var array = [{
+//     key: 'one',
+//     value: 1
+//    }, {
+//     key: 'two',
+//     value: 2
+//    }, {
+//     key: 'three',
+//     value: 3
+//    }];
+
+//    array.reduce(function(obj, current) {
+//     obj[current.key] = current.value;
+//     console.log(obj);
+//    }, {});
+
+// console.log
+   
+// let niz = [1, 2, 3];
+// let noviNiz = niz.map(x => x ** 3)
+// console.log(noviNiz);
+// let noviNiz2 = noviNiz.filter(x => x > 1)
+// console.log(noviNiz2);
+// let noviNiz3 = noviNiz2.map(x => x + 1)
+// console.log(noviNiz3);
+// let noviNiz4 = noviNiz3.reduce((a, b) => a + b, 0);
+// console.log(noviNiz4)
+
+// let arr = [1, 2, 3];
+
+// let data = {};
+// data[arr] = arr;
+
+// console.log(data[arr])
+// console.log(data)
+
+// let x = [1, 2, 3];
+// let y = 2;
+// let z = { value: 3 };
+
+// let data = {};
+
+// data[x] = x;
+// data[y] = y;
+// data[z] = z;
+
+// console.log(data)
+
+// let basicData = { id: "333-222" };
+// let relatedId = "wow";
+// let data = {};
+// data[basicData] = basicData;
+// data[relatedId] = relatedId;
+
+// console.log(data)
+
+
+// let then = async () => 3;
+// then().then(x => console.log(x));
+
+// let arr = [1, 2, 3];
+// let arrSqrt = arr.forEach(x => Math.sqrt(x));
+// console.log(arrSqrt)
+
+
+// console.log(type)
+
+// let a = 4.2224;
+// let b = parseInt(4333);
+// console.log(b)
+
+// let e = true;
+
+// if (`${e}` == true) {
+//     console.log(true)
+// } else {
+//     console.log(false)
+// }
+
+let later = (func) => {
+    return new Promise((resolve, reject) => {
+        if (later) {
+            resolve(func(4));
+        } else {
+            reject(new Error("later is not defined"));
+        }
+    })
+}
+
+later(x => Promise.resolve(12+x)).then(console.log).catch(console.log)
