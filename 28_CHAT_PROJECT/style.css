@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    width: 200px;
+}
+
+form button {
+    width: 100px;
+}
