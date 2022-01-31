@@ -29,5 +29,20 @@
       <input type="text" />
       <button>Update</button>
     </form>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAWQtVJempVDjyzvMunzPohaHI2p_17jOc",
+        authDomain: "myfirstproject-86fb2.firebaseapp.com",
+        projectId: "myfirstproject-86fb2",
+        storageBucket: "myfirstproject-86fb2.appspot.com",
+        messagingSenderId: "249452717540",
+        appId: "1:249452717540:web:6f1b3f60ce7e5f0223d3f1",
+        measurementId: "G-D5GLREY7LD",
+      };
+      firebase.initializeApp(firebaseConfig);
+      let db = firebase.firestore();
+    </script>
   </body>
 </html>
