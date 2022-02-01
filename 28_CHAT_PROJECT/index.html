@@ -20,7 +20,9 @@
         <li><a href="">TESTS</a></li>
       </ul>
     </nav>
-    <section id="chatMessages"></section>
+    <section id="chatMessages">
+        <ul></ul>
+    </section>
     <form id="message">
       <input type="text" />
       <button>Send</button>
@@ -44,6 +46,6 @@
       firebase.initializeApp(firebaseConfig);
       let db = firebase.firestore();
     </script>
-    <script src="chat.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
