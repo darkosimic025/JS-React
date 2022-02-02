@@ -13,19 +13,21 @@
       <h2>Choose a chatroom</h2>
     </header>
     <nav>
-      <ul>
-        <li><a href="">GENERAL</a></li>
-        <li><a href="">JS</a></li>
-        <li><a href="">HOMEWORKS</a></li>
-        <li><a href="">TESTS</a></li>
+      <ul id="navMenu">
+        <li class="navButton"><a href="">GENERAL</a></li>
+        <li class="navButton"><a href="">JS</a></li>
+        <li class="navButton"><a href="">HOMEWORKS</a></li>
+        <li class="navButton"><a href="">TESTS</a></li>
       </ul>
     </nav>
-    <section id="chatMessages">
-        <ul></ul>
+    <section>
+      <div>
+        <ul id="chatMessages"></ul>
+      </div>
     </section>
     <form id="message">
-      <input type="text" />
-      <button>Send</button>
+      <input type="text" id="inputMessage"/>
+      <button id="buttonSend">Send</button>
     </form>
     <form id="username">
       <input type="text" />

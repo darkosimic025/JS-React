@@ -8,17 +8,15 @@ header {
     text-align: center;
 }
 
-ul {
+#navMenu {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
-li {
+.navButton {
     flex-direction: row;
     align-items: center;
-    
-
 }
 
 form {
@@ -31,4 +29,12 @@ form input {
 
 form button {
     width: 100px;
+}
+
+#chatMessages {
+    display: flex;
+}
+
+.message {
+    flex-direction: column;
 }
