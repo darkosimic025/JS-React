@@ -15,15 +15,29 @@ let chat1 = new Chatroom("general", "darko");
 
 
 
-let lista = document.querySelector('ul');
+let lista = document.getElementById('chatMessages');
 let chatUi = new ChatUi(lista);
 
 chat1.getChats((d) => {
     chatUi.templateLi(d)
 });
+
+
   
-let inputMessage = document.querySelector('#inputMessage');
-let buttonSend = document.querySelector('#buttonSend');
+let inputMessage = document.querySelector(".messageInput__field");
+let buttonSend = document.querySelector(".messageInput__button");
+
+let inputUsername = document.querySelector(".usernameInput__field");
+let formUpdate = document.querySelector(".usernameInput");
+
+
+formUpdate.addEventListener('submit', (e) => {
+    e.preventDefault;
+    let inputUsernameValue = inputUsername.value;
+    chat1.updateUsername(inputUsernameValue);
+    console.log(inputUsernameValue);
+});
+
 
 buttonSend.addEventListener('click', (e) => {
     e.preventDefault();

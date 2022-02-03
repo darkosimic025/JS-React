@@ -12,7 +12,7 @@ class ChatUi {
     }
     
     dateMethod(date) {
-        let d = date.getDay();
+        let d = date.getDate();
         let m = date.getMonth()+1;
         let y = date.getFullYear();
         let h = date.getHours();
@@ -32,9 +32,9 @@ class ChatUi {
   templateLi(object) {
     let dateFormat = object.created_at.toDate();
 
-    let li = `<li>${object.username}: ${
+    let li = `<li class="listElement"><span class="iconName">${object.username.slice(0,1)}</span> <span class="textMessage">${
       object.message
-    } (${this.dateMethod(dateFormat)})</li>`;
+    }</span> <span class="time">${this.dateMethod(dateFormat)}</span></li>`;
     this.element.innerHTML += li;
   }
 }

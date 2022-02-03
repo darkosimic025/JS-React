@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>ITBootcamp Chat</h1>
-      <h2>Choose a chatroom</h2>
+    <header class="header">
+      <h1 class="header__primary">Chatify</h1>
+      <h2 class="header__secondary">Choose a chatroom :</h2>
     </header>
     <nav>
-      <ul id="navMenu">
-        <li class="navButton"><a href="">GENERAL</a></li>
-        <li class="navButton"><a href="">JS</a></li>
-        <li class="navButton"><a href="">HOMEWORKS</a></li>
-        <li class="navButton"><a href="">TESTS</a></li>
+      <ul class="navMenu">
+        <li class="navMenu__button"><a class="navMenu__button-click" href="">GENERAL</a></li>
+        <li class="navMenu__button"><a class="navMenu__button-click" href="">JS</a></li>
+        <li class="navMenu__button"><a class="navMenu__button-click" href="">HOMEWORKS</a></li>
+        <li class="navMenu__button"><a class="navMenu__button-click" href="">TESTS</a></li>
       </ul>
     </nav>
-    <section>
+    <section class="chatMessages">
       <div>
         <ul id="chatMessages"></ul>
       </div>
     </section>
-    <form id="message">
-      <input type="text" id="inputMessage"/>
-      <button id="buttonSend">Send</button>
+    <form class="messageInput">
+      <input type="text" class="messageInput__field"/>
+      <button class="messageInput__button">Send</button>
     </form>
-    <form id="username">
-      <input type="text" />
-      <button>Update</button>
+    <form class="usernameInput">
+      <input type="text" class="usernameInput__field" />
+      <input class="usernameInput__button" type="submit">Update</input>
     </form>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>

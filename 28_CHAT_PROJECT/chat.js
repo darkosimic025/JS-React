@@ -24,6 +24,10 @@ class Chatroom {
     return this._room;
   }
 
+  updateUsername(newUsername) {
+    this.username = newUsername;
+  }
+
   async addChat(poruka) {
     let object = {
       message: poruka,
