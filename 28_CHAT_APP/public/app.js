@@ -24,7 +24,13 @@ if (localStorage.color  && localStorage.color2) {
     bodyBackground.style.backgroundImage = `linear-gradient(to right bottom, #22c1c3, #fdbb2d)`;
 }
 
+let usernameLogo = document.querySelector(".usernameLogo");
 
+if (localStorage.username) {
+    usernameLogo.innerHTML = localStorage.username.slice(0, 1);
+} else {
+    usernameLogo.innerHTML = "A";
+}
 
 
 
@@ -48,8 +54,8 @@ let inputUsername = document.querySelector(".username__input");
 let formUpdate = document.querySelector(".username");
 
 let navBar = document.querySelector(".navMenu");
-let usernameLogo = document.querySelector(".usernameLogo");
-usernameLogo.innerHTML = localStorage.username.slice(0,1);
+
+
 
 let messageDelete = document.querySelector("#chatMessages");
 
@@ -90,11 +96,12 @@ navBar.addEventListener('click', event => {
 messageDelete.addEventListener('click', event => {
     event.preventDefault();
     if (event.target.tagName == "I") {
-        confirm("Da li ste sigurni?");
         let idMessage = event.target.parentElement.parentElement.parentElement;
         if (event.target.parentElement.parentElement.parentElement.parentElement.id == localStorage.username) {
-            idMessage.remove();
-            chat1.deleteMessage(event.target.parentElement.parentElement.parentElement.id);
+            if (confirm("Da li ste sigurni?")) {
+                idMessage.remove();
+                chat1.deleteMessage(event.target.parentElement.parentElement.parentElement.id);
+            }
         } else {
             idMessage.remove();
         }       

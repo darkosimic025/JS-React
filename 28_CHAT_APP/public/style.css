@@ -62,6 +62,10 @@
   [class*="col-"] {
     width: 100%;
   }
+  .colorPicker {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 * {
@@ -72,6 +76,7 @@
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#22c1c3), to(#fdbb2d));
   background-image: linear-gradient(to right bottom, #22c1c3, #fdbb2d);
   background-repeat: no-repeat;
   position: relative;
@@ -126,7 +131,7 @@ body {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   width: 95%;
-  margin: 20px auto;
+  margin: 13px auto;
   overflow: hidden;
   overflow-y: scroll;
   height: 60%;
@@ -138,13 +143,15 @@ body {
 }
 
 .dateSearchFrame {
+  margin-left: 1.3%;
+  margin-right: -1.3%;
   font-size: medium;
   padding: 10px;
 }
 
 .dateSearch__button {
   width: 80%;
-  margin: 15px auto;
+  margin: 10px auto;
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -158,6 +165,12 @@ body {
   height: 50px;
 }
 
+.dateSearch__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .dateSearch__input--primary, .dateSearch__input--secondary {
   width: 47.5%;
   display: inline-block;
@@ -168,10 +181,7 @@ body {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   height: 50px;
-}
-
-.dateSearch__input--primary {
-  margin-left: 20px;
+  text-align: center;
 }
 
 .message__input, .username__input {
@@ -215,8 +225,10 @@ body {
 
 .colorPicker {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 2%;
+  left: 2%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .colorPicker__submit {
@@ -344,8 +356,8 @@ input[type="color"]::-webkit-color-swatch {
   display: inline-block;
   border-radius: 20px;
   position: absolute;
-  right: 25px;
-  top: 25px;
+  right: 2%;
+  top: 1%;
   height: 40px;
   width: 40px;
   vertical-align: bottom;

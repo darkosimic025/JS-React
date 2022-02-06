@@ -36,11 +36,11 @@ class ChatUi {
     let yNow = nowDate.getFullYear();
 
     if (dNow == d && mNow == m && yNow == y) {
-      return `${h < 9 ? "0" + h : h}:${min < 9 ? "0" + min : min}`;
+      return `${h <= 9 ? "0" + h : h}:${min <= 9 ? "0" + min : min}`;
     } else {
       return `${
-        h < 9 ? "0" + h : h
-      }:${min < 9 ? "0" + min : min}  ${d < 9 ? "0" + d : d}.${m < 9 ? "0" + m : m}.${y}.  ` ;
+        h <= 9 ? "0" + h : h
+      }:${min <= 9 ? "0" + min : min}  ${d <= 9 ? "0" + d : d}.${m <= 9 ? "0" + m : m}.${y}.  ` ;
     }
   }
 
