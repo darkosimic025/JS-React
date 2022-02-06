@@ -18,7 +18,7 @@ let chatUii = new ChatUi(lista);
 
 
 let bodyBackground = document.querySelector("body");
-if (localStorage.color == true && localStorage.color2 == true) {
+if (localStorage.color  && localStorage.color2 ) {
     bodyBackground.style.backgroundImage = `linear-gradient(to right bottom, ${localStorage.color}, ${localStorage.color2}`;
 } else {
     bodyBackground.style.backgroundImage = `linear-gradient(to right bottom, #22c1c3, #fdbb2d)`;
