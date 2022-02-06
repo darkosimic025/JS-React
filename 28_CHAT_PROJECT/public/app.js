@@ -44,7 +44,7 @@ let formUpdate = document.querySelector(".username");
 
 let navBar = document.querySelector(".navMenu");
 let usernameLogo = document.querySelector(".usernameLogo");
-// usernameLogo.innerHTML = localStorage.username.slice(0,1);
+usernameLogo.innerHTML = localStorage.username.slice(0,1);
 
 let messageDelete = document.querySelector("#chatMessages");
 
