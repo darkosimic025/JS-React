@@ -62,12 +62,11 @@ class Chatroom {
     this.unsub = this.chats
       .where("room", "==", this.room)
       .where("created_at", ">=", date1)
-      .where("created_at", "<=" , date2)
+      .where("created_at", "<=", date2)
       .orderBy("created_at", "asc")
       .onSnapshot((snapshot) => {
         snapshot.docChanges().forEach((change) => {
           if (change.type == "added") {
-            // callback(change.doc.data());
             callback(change.doc);
           }
         });
@@ -81,7 +80,6 @@ class Chatroom {
       .onSnapshot((snapshot) => {
         snapshot.docChanges().forEach((change) => {
           if (change.type == "added") {
-            // callback(change.doc.data());
             callback(change.doc);
           }
         });

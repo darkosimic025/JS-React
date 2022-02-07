@@ -38,29 +38,22 @@ class ChatUi {
     if (dNow == d && mNow == m && yNow == y) {
       return `${h <= 9 ? "0" + h : h}:${min <= 9 ? "0" + min : min}`;
     } else {
-      return `${
-        h <= 9 ? "0" + h : h
-      }:${min <= 9 ? "0" + min : min}  ${d <= 9 ? "0" + d : d}.${m <= 9 ? "0" + m : m}.${y}.  ` ;
+      return `${h <= 9 ? "0" + h : h}:${min <= 9 ? "0" + min : min}  ${
+        d <= 9 ? "0" + d : d
+      }.${m <= 9 ? "0" + m : m}.${y}.  `;
     }
   }
 
-  // templateLi(object) {
-  //   let dateFormat = object.created_at.toDate();
-
-  //   let li = `<li class="listElement"><span class="iconName">${object.username.slice(0,1)}</span>  <span class="textMessage">${object.message}</span><span class="time">${this.dateMethod(dateFormat)}</span></li>`;
-  //   this.element.innerHTML += li;
-  // }
-
   templateLi(object) {
     let id = object.id;
-    // let usernameDelte = object.username;
     object = object.data();
     let dateFormat = object.created_at.toDate();
-
     if (object.username == localStorage.username) {
       let li = `<div id="${object.username}">
                     <li id="${id}" class="listElement__active">  
-                      <span class="textMessage textMessage__active"><span id="usernameDelete">${object.username}</span>: ${object.message}
+                      <span class="textMessage textMessage__active"><span id="usernameDelete">${
+                        object.username
+                      }</span>: ${object.message}
                       <hr>
                         <div>${this.dateMethod(dateFormat)}
                               <i class="material-icons">delete
@@ -72,7 +65,9 @@ class ChatUi {
     } else {
       let li = `<div id="${object.username}">
                   <li id="${id}" class="listElement">
-                    <span class="textMessage"><span id="usernameDelete">${object.username}</span>: ${object.message}
+                    <span class="textMessage"><span id="usernameDelete">${
+                      object.username
+                    }</span>: ${object.message}
                       <hr>
                          <div>${this.dateMethod(dateFormat)}
                               <i class="material-icons">delete
@@ -80,9 +75,10 @@ class ChatUi {
                         </div>
                     </span>
                 </li> </div>`;
-      
+
       this.element.innerHTML += li;
     }
+    this.element.scrollTop = this.element.scrollHeight;
   }
 }
 

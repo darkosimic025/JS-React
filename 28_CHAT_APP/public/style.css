@@ -89,7 +89,8 @@ body {
 }
 
 .header__primary {
-  font-size: 40px;
+  font-size: 50px;
+  margin-top: 40px;
 }
 
 .header__secondary {
@@ -123,6 +124,11 @@ body {
           transform: scale(1.2);
 }
 
+.chatMessages__list {
+  overflow: auto;
+  height: 500px;
+}
+
 .chatMessages {
   border: 3px solid white;
   background-color: transparent;
@@ -132,9 +138,6 @@ body {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   width: 95%;
   margin: 13px auto;
-  overflow: hidden;
-  overflow-y: scroll;
-  height: 60%;
   word-wrap: break-word;
 }
 
@@ -184,7 +187,8 @@ body {
   text-align: center;
 }
 
-.message__input, .username__input {
+.message__input,
+.username__input {
   width: 94%;
   margin: auto;
   display: block;
@@ -193,11 +197,14 @@ body {
   padding: 10px;
 }
 
-.message__input:focus, .username__input:focus {
+.message__input:focus,
+.username__input:focus {
   outline: none;
+  border: 5px solid white;
 }
 
-.message__submit, .username__submit {
+.message__submit,
+.username__submit {
   width: 80%;
   margin: auto;
   display: block;
@@ -206,13 +213,16 @@ body {
   cursor: pointer;
 }
 
-.message__submit:hover, .username__submit:hover {
+.message__submit:hover,
+.username__submit:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.message__input, .message__submit, .username__input, .username__submit {
+.message__input, .message__submit,
+.username__input,
+.username__submit {
   border: 3px solid white;
   background-color: transparent;
   border-radius: 15px;
@@ -322,7 +332,8 @@ body {
           transform: scale(1.05);
 }
 
-input[type="color"], .colorPicker__submit {
+input[type="color"],
+.colorPicker__submit {
   -webkit-appearance: none;
   border: none;
   width: 25px;
