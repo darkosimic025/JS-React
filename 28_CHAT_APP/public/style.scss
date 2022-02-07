@@ -76,6 +76,7 @@ $color-primary-light-opacity: rgba(255, 255, 255, 0.5);
 }
 
 body {
+  transition: 2s;
   background-image: linear-gradient(to right bottom, #22c1c3, #fdbb2d);
   background-repeat: no-repeat;
   position: relative;
@@ -99,6 +100,7 @@ body {
 
 .navMenu {
   margin-top: 15px;
+
 
   &__button {
     @include border;
